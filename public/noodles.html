@@ -1,0 +1,157 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Chilli Stew Recipe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="text-gray-600 font-body">
+    <div class="grid md:grid-cols-3"><!-- content wrapper -->
+        <div class="md:col-span-1 md:flex md:justify-end">
+            <nav class="text-right">
+                <div class="flex justify-between items-center">
+                    <h1 class="font-bold uppercase p-4 border-b border-gray-100">
+                        <a class="hover:text-gray-700" href="/">Food Ninja</a>
+                    </h1>
+                    <div class="px-4 cursor-pointer md:hidden" id="burger">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>                          
+                    </div>
+                </div>
+                <ul class="text-sm mt-6 hidden md:block" id="menu">
+                    <li class="text-gray-700 font-bold py-1">
+                        <a class="px-4 flex justify-end ml-2 border-r-4 border-primary" href="/"><span>Home</span>
+                            <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                              </svg>                              
+                        </a>
+                    </li>
+                    <li class="py-1">
+                        <a class="px-4 flex justify-end ml-2 border-r-4 border-white" href="#"><span>About</span>
+                            <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+                              </svg>
+                              
+                        </a>
+                    </li>
+                    <li class="py-1">
+                        <a class="px-4 flex justify-end ml-2 border-r-4 border-white" href="#"><span>Contact</span>
+                        <svg class="w-5 ml-2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div><!--End Nav-->
+        <main class="px-16 py-6 bg-gray-100 md:col-span-2">
+            <div class="flex justify-center md:justify-end">
+                <a class="text-primary btn border-primary md:border-2
+                 hover:bg-primary hover:text-white transition ease-out duration-500" href="#">Log in</a>
+                <a class="text-primary ml-2 btn border-primary md:border-2
+                 hover:bg-primary hover:text-white transition ease-out duration-500" href="#">Sign up</a>
+            </div>
+              
+            <header>
+                <h1 class="text-6xl font-semibold mb-4">Veg Noodles</h1>
+            </header>
+            <div>
+                <div class="mt-8 grid lg:grid-cols-1 gap-10">
+                    <div class="card hover:shadow-lg">
+                        <img src="img/noodles.jpg" alt="stew" class="w-full h-32 sm:h-48 object-cover">
+                            <div class="m-4">
+                                <span class="font-bold">Veg Noodles</span>
+                                <span class="block text-gray-500 text-sm">Recipe by Carlos</span>
+                            </div>
+                            <div class="badge">
+                                <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                  </svg>
+                                  
+                                <span>25 mins</span>
+                            </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="text-4xl text-gray-500 font-bold">Ingredients:</div>
+                        <div>
+                            <ul class="list-disc ml-8">
+                                <li class="py-2 border-b-2 border-blue-300">2 tablespoons sesame oil</li>
+                                <li class="py-2 border-b-2 border-blue-300">2 cloves garlic, minced</li>
+                                <li class="py-2 border-b-2 border-blue-300">3 cloves garlic, minced</li>
+                                <li class="py-2 border-b-2 border-blue-300">200g noodles (egg or rice noodles)</li>
+                                <li class="py-2 border-b-2 border-blue-300">1 small onion, thinly sliced</li>
+                                <li class="py-2 border-b-2 border-blue-300">1 carrot, julienned</li>
+                                <li class="py-2 border-b-2 border-blue-300">1 bell pepper (any color), thinly sliced</li>
+                                <li class="py-2 border-b-2 border-blue-300">1 cup broccoli florets</li>
+                                <li class="py-2 border-b-2 border-blue-300">1 cup snap peas, trimmed</li>
+                                <li class="py-2 border-b-2 border-blue-300">2 tablespoons soy sauce</li>
+                                <li class="py-2 border-b-2 border-blue-300">1 tablespoon oyster sauce (optional)</li>
+                                <li class="py-2 border-b-2 border-blue-300">Salt and pepper to taste</li>
+                                <li class="py-2 border-b-2 border-blue-300"> Chopped green onions and sesame seeds for garnish (optional)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="text-4xl text-gray-500 font-bold mb-2">Instructions:</div>
+                        <ol class="ml-4">
+                            <li class="text-justify mb-3">
+                                <strong class="inline-block text-gray-500 font-bold mb-2">STEP 1</strong>
+                                <p>
+                                    Cook the noodles according to package instructions until they are al dente.
+                                    Drain and rinse under cold water to stop the cooking process. Set aside.
+                                </p>
+                            </li>
+                            <li class="text-justify mb-3">
+                                <strong class="inline-block text-gray-500 font-bold mb-2">STEP 2</strong>
+                                <p>
+                                    Heat sesame oil in a large pan or wok over medium-high heat. 
+                                    Add minced garlic and sliced onion, and cook until fragrant and onion is translucent, about 2 minutes.
+                                </p>
+                            </li>
+                            <li class="text-justify mb-3">
+                                <strong class="inline-block text-gray-500 font-bold mb-2">STEP 3</strong>
+                                <p>
+                                    Add julienned carrots, sliced bell pepper, broccoli florets, 
+                                    and snap peas to the pan. Stir-fry for 3-4 minutes until the vegetables are tender-crisp.
+                                </p>
+                            </li>
+                            <li class="text-justify mb-3">
+                                <strong class="inline-block text-gray-500 font-bold mb-2">STEP 4</strong>
+                                <p>
+                                    Add the cooked noodles to the pan along with soy sauce and oyster sauce (if using).
+                                    Toss everything together until the noodles and vegetables are well coated with the sauce.
+                                </p>
+                            </li>
+                            <li class="text-justify mb-3">
+                                <strong class="inline-block text-gray-500 font-bold mb-2">STEP 5</strong>
+                                <p>
+                                    Season with salt and pepper to taste. Adjust the seasoning and sauce according to your preference.
+                                </p>  
+                            </li>
+                            <li class="text-justify mb-3">
+                                <strong class="inline-block text-gray-500 font-bold mb-2">STEP 6</strong>
+                                <p>
+                                    Remove from heat and transfer the vegetable noodles to serving plates.
+                                </p>
+                            </li>
+                            <li class="text-justify mb-3">
+                                <strong class="inline-block text-gray-500 font-bold mb-2">STEP 7</strong>
+                                <p>
+                                    Garnish with chopped green onions and sesame seeds if desired.
+Serve hot and enjoy                 Serve your delicious Vegetable Noodles!
+                                </p>
+                            </li>
+                            
+                        </ol>
+                    </div>
+                </div>
+                </div>
+            
+            
+          
+         
+        </main>
+    </div>
+  
+      <script src="index.js"></script>
+</body>
+</html>
